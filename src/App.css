@@ -17,8 +17,9 @@
        }
 
 .table td {
-            border: solid black 3px ;
-            width: 33.3%;
+            border: solid black 5px ;
+            width: 33.3% ;
+            height: 33.3% ;
           }
 
 .play-btn {
@@ -34,3 +35,25 @@
                     background-color: lightseagreen ;
                 }
 
+.play-btn p {
+               font-family: Arial, Helvetica, sans-serif ;
+               font-weight: bold ;
+               font-size: 45px ;
+            }
+
+.turn-box {
+            display: flex ;
+            justify-content: center ;
+            align-items: center ;
+            width: 500px ;
+            height: 100px ;
+            background-color: #ffffff ;
+            margin: 100px auto ;
+            border-radius: 8px ;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          }
+
+.turn-box p {
+               font-family: Arial, Helvetica, sans-serif ;
+               font-size: 35px ;
+            }
