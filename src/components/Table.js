@@ -1,5 +1,6 @@
 import React,{ useState } from 'react' ;
 import Swal from 'sweetalert2' ;
+import {motion} from 'framer-motion' ;
 
 function Table()
 {   
@@ -90,9 +91,29 @@ function Table()
         )
     }
 
+    const PlayHistory = () => {
+        return(
+            <table className="table-history">
+                <tr>
+                    <th> Position </th>
+                    <th> Player </th>
+                </tr>
+                {
+                    history.map((history) =>                   
+                        <tr>
+                            <td> {history.pos} </td>
+                            <td> {history.player} </td>
+                        </tr>
+                    )
+                }
+            </table>
+        )
+    }
+
     return(
     <div className="container">
         <TurnBox/>
+        <PlayHistory/>
         <div className="table-box">
             <table className="table">
             <tbody>
